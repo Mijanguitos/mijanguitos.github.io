@@ -1,10 +1,13 @@
-## Portfolio
+## Embedded systems and control engineering project selection
 
 ---
 
-### Category Name 1 
+### Smart framework for air pressure control in agricultural equipment
 
-[Plataforma inteligente para control de presión de aire en equipo agrícola ](/sample_page)
+[In collaboration with John Deere](https://www.deere.com/en/index.html)
+
+Design and development of a closed-loop tire air pressure control system for John Deere agricultural vehicles (scaled).
+
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
