@@ -9,8 +9,11 @@ Design and development of a system capable of measuring the tire pressure and ad
 This is achieved through the implementation of a closed-loop PID control system in real time (RTOS) inside a STM32 microcontroller. It receives through the CAN protocol the information from the reference and sends the corresponding signal to activate the pump or valve to make the pressure adjustment. The second core of the microcontroller performs a Fourier analysis of the pump vibrations to compensate for measurement errors due to noise.
 
 The system is also capable of sending the information to a remote server through the MQTT protocol with an ESP32, so that the user can monitor the pressure of the tires.
+<p>
+    <img src="images/P1-control-diagram.png?raw=true"/>
+    <em>Closed-loop control diagram</em>
+</p>
 
-<img src="images/P1-control-diagram.png?raw=true"/>
 <img src="images/P1-schematic.png?raw=true"/>
 <img src="images/P1-3Dmodel.png?raw=true"/>
 <img src="images/P1-freq.png?raw=true"/>
@@ -20,15 +23,13 @@ The system is also capable of sending the information to a remote server through
 ### Gas detection safety system
 [Supervised by Intel](https://www.intel.la/content/www/xl/es/homepage.html)
 
-To implement a safety system that focuses on the detection of harmful gases, interconnected sensors that measure different environmental variables are needed. If the gas concentration is above the permitted limits measured with an MQ3-alcohol and MQ135-CO<sub>2</sub> sensors, the system activates ventilation fans and alarm systems to prevent accidents and preserve the health and well-being of individuals. The microcontroller used is an ATmega328P, which additionally communicates via Bluetooth with a computer to monitor the system in real time.
+To implement a safety system that focuses on the detection of harmful gases, interconnected sensors that measure different environmental variables are needed. The system activates ventilation fans and an alarm system if the gas concentration is above the permitted limits measured with an MQ3-alcohol and MQ135-CO<sub>2</sub>. The microcontroller used is an ATmega328P, which additionally communicates via Bluetooth with a computer to monitor the system in real time.
 
 <img src="images/P2-diagram.png?raw=true"/>
 <img src="images/P2-schematic.png?raw=true"/>
 
 ---
 ### Smart garbage can system
-Implmentation of the internet of things
-
 
 This smart trash monitoring system uses a Raspberry Pi an ultrasonic sensor to determine the percentage of waste accumulated in the can. The data is sent and stored in a MySQL database deployed with XAMPP, and presented on a dashboard for easy and convenient viewing by users. The idea is, if expanded, to have a network of cans to improve the route efficiency of garbage collection services. 
 
