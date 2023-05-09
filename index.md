@@ -14,20 +14,31 @@ The system is also capable of sending the information to a remote server through
 <img src="images/P1-control-diagram.png?raw=true"/>
 <img src="images/P1-schematic.png?raw=true"/>
 <img src="images/P1-3Dmodel.png?raw=true"/>
+<img src="images/P1-freq.png?raw=true"/>
+<img src="images/P1-GUI.png?raw=true"/>
 
 ---
 ### Gas detection safety system
+[Supervised by Intel](https://www.deere.com/en/index.html)
+
 To implement a safety system that focuses on the detection of harmful gases, interconnected sensors that measure different environmental variables are needed. If the concentration of harmful gases is above the permitted limits measured with an MQ3-alcohol and MQ135-CO<sub>2</sub> sensors, the system activates ventilation fans and alarm systems to prevent accidents and preserve the health and well-being of individuals. The microcontroller used is an ATmega328P, which additionally communicates via Bluetooth with a computer to monitor the system in real time.
 
+<img src="images/P2-diagram.png?raw=true"/>
+<img src="images/P2-schematic.png?raw=true"/>
 
 ---
-
 ### Smart garbage bin system
-This smart trash monitoring system uses a Raspberry Pi an ultrasonic sensor to determine the percentage of waste accumulated in the bin. The data is sent and stored in a database, and presented on a dashboard for easy and convenient viewing by users. The idea is, if expanded, to have a network of cans to improve the efficiency of garbage collection services. 
+Implmentation of the internet of things
 
-Two types of MQTT protocol inputs were used in Node-Red to receive measurements from the simulation and the physical sensor. Each input went into a separate function to provide the necessary formatting and perform the functions that evaluate the functional requirements. The information was filtered and sent via email and Telegram notifications.
 
+This smart trash monitoring system uses a Raspberry Pi an ultrasonic sensor to determine the percentage of waste accumulated in the bin. The data is sent and stored in a MySQL database deployed with XAMPP, and presented on a dashboard for easy and convenient viewing by users. The idea is, if expanded, to have a network of cans to improve the route efficiency of garbage collection services. 
+
+Two types of MQTT protocol inputs were used in Node-Red to receive measurements from the simulation and the physical sensor. Each input went into a separate function to provide the necessary formatting and perform the evaluation of the requirements. The information was filtered and sent via email and Telegram notifications.
+
+<img src="images/P3-dash.png?raw=true"/>
+<img src="images/P3-map.png?raw=true"/>
+<img src="images/P3-node.png?raw=true"/>
+<img src="images/P3-uml.png?raw=true"/>
 
 ---
-<p style="font-size:11px"> </a></p>
-<!-- Remove above link if you don't want to attibute -->
+<p style="font-size:11px"></p>
