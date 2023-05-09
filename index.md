@@ -3,7 +3,7 @@
 ---
 
 ### Smart framework for air pressure control in agricultural vehicles
-#### Implementation of advanced embedded systems and control engineering
+Implementation of advanced embedded systems and control engineering
 [In collaboration with John Deere](https://www.deere.com/en/index.html)
 
 Design and development of a system capable of measuring the tire pressure and adjusting it to a desired value given by the user from a graphical interface in order to adapt the John Deere vehicles to the terrain conditions it has to traverse, and thus maximize its service life. 
