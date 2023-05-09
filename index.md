@@ -2,7 +2,6 @@
 
 ---
 ### Smart framework for air pressure control in agricultural vehicles
-Implementation of advanced embedded systems and control engineering
 [In collaboration with John Deere](https://www.deere.com/en/index.html)
 
 Design and development of a system capable of measuring the tire pressure and adjusting it to a desired value given by the user from a graphical interface in order to adapt the John Deere vehicles to the terrain conditions it has to traverse, and thus maximize its service life. 
@@ -19,19 +18,19 @@ The system is also capable of sending the information to a remote server through
 
 ---
 ### Gas detection safety system
-[Supervised by Intel](https://www.deere.com/en/index.html)
+[Supervised by Intel](https://www.intel.la/content/www/xl/es/homepage.html)
 
-To implement a safety system that focuses on the detection of harmful gases, interconnected sensors that measure different environmental variables are needed. If the concentration of harmful gases is above the permitted limits measured with an MQ3-alcohol and MQ135-CO<sub>2</sub> sensors, the system activates ventilation fans and alarm systems to prevent accidents and preserve the health and well-being of individuals. The microcontroller used is an ATmega328P, which additionally communicates via Bluetooth with a computer to monitor the system in real time.
+To implement a safety system that focuses on the detection of harmful gases, interconnected sensors that measure different environmental variables are needed. If the gas concentration is above the permitted limits measured with an MQ3-alcohol and MQ135-CO<sub>2</sub> sensors, the system activates ventilation fans and alarm systems to prevent accidents and preserve the health and well-being of individuals. The microcontroller used is an ATmega328P, which additionally communicates via Bluetooth with a computer to monitor the system in real time.
 
 <img src="images/P2-diagram.png?raw=true"/>
 <img src="images/P2-schematic.png?raw=true"/>
 
 ---
-### Smart garbage bin system
+### Smart garbage can system
 Implmentation of the internet of things
 
 
-This smart trash monitoring system uses a Raspberry Pi an ultrasonic sensor to determine the percentage of waste accumulated in the bin. The data is sent and stored in a MySQL database deployed with XAMPP, and presented on a dashboard for easy and convenient viewing by users. The idea is, if expanded, to have a network of cans to improve the route efficiency of garbage collection services. 
+This smart trash monitoring system uses a Raspberry Pi an ultrasonic sensor to determine the percentage of waste accumulated in the can. The data is sent and stored in a MySQL database deployed with XAMPP, and presented on a dashboard for easy and convenient viewing by users. The idea is, if expanded, to have a network of cans to improve the route efficiency of garbage collection services. 
 
 Two types of MQTT protocol inputs were used in Node-Red to receive measurements from the simulation and the physical sensor. Each input went into a separate function to provide the necessary formatting and perform the evaluation of the requirements. The information was filtered and sent via email and Telegram notifications.
 
