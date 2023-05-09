@@ -11,7 +11,11 @@ This is achieved through the implementation of a closed-loop PID control system 
 
 The system is also capable of sending the information to a remote server through the MQTT protocol with an ESP32, so that the user can monitor the pressure of the tires in real time.
 
-<img src="images/P1-control-diagram.png" width="45%"></img> <img src="images/P1-schematic.png" width="45%"></img> <img src="images/P1-3Dmodel.png" width="45%"></img> <img src="images/P1-freq.png" width="45%"></img> <img src="images/P1-GUI.png" width="45%"></img>
+<img src="images/P1-control-diagram.png" width="45%"></img> <img 
+src="images/P1-schematic.png" width="45%"></img> <img 
+src="images/P1-3Dmodel.png" width="45%"></img> <img 
+src="images/P1-freq.png" width="45%"></img> <img 
+src="images/P1-GUI.png" width="45%"></img>
 
 <img src="images/P1-control-diagram.png?raw=true"/>
 <img src="images/P1-schematic.png?raw=true"/>
