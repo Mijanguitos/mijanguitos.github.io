@@ -4,8 +4,10 @@
 ### Smart framework prototype for air pressure control in agricultural vehicles
 [In collaboration with John Deere](https://www.deere.com/en/index.html)
 
-Design and development of a system capable of measuring the tire pressure and adjusting it to a desired value given by the user from a graphical interface in order to adapt the John Deere vehicles to the terrain conditions it has to traverse, and thus maximize its service life. 
-A multicore STM32 microcontroller is responsible for the control with a real-time operating system (RTOS). The second core of the microcontroller performs a Fourier analysis of the pump vibrations to compensate for measurement errors due to noise. A CAN-based communication protocol recieved a pressure setpoint to activate the pump or valve. The system is also capable of sending the information to a remote server through the MQTT protocol with an ESP32, so that the user can monitor the pressure of the tires. 
+Design and development of a system capable of measuring the tire pressure and adjusting it to a desired value given by the user from a graphical interface in order to adapt the John Deere vehicles to the terrain conditions it has to traverse, and thus maximize its service life.
+
+A multicore STM32 microcontroller is responsible for the control with a real-time operating system (RTOS). The second core of the microcontroller performs a Fourier analysis of the pump vibrations to compensate for measurement errors due to noise. A CAN-based communication protocol recieved a pressure setpoint to activate the pump or valve. The system is also capable of sending the information to a remote server through the MQTT protocol with an ESP32, so that the user can monitor the pressure of the tires.
+
 I mainly contributed to the closed-loop PID control system, the electronics, the design of the valve-pump system, the multicore programming of the microcontroller and the implementation of the RTOS.
 
 <p>
@@ -14,19 +16,19 @@ I mainly contributed to the closed-loop PID control system, the electronics, the
 </p>
 <p>
     <img src="images/P1-schematic.png?raw=true"/>
-    <em>Closed-loop control diagram</em>
+    <em>Electric diagram of the system</em>
 </p>
 <p>
-    <img src="images/P1-3Dmodel.png?raw=true"/>
-    <em>Closed-loop control diagram</em>
+    <img src="images/P1-venturi.gif?raw=true"/>
+    <em>Flow simulation of the pump-valve system</em>
 </p>
 <p>
     <img src="images/P1-freq.png?raw=true"/>
-    <em>Closed-loop control diagram</em>
+    <em>Fourier analysis of the pump vibrations</em>
 </p>
 <p>
     <img src="images/P1-GUI.png?raw=true"/>
-    <em>Closed-loop control diagram</em>
+    <em>Graphical user interface</em>
 </p>
 
 
