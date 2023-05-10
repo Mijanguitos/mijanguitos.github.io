@@ -15,12 +15,12 @@ I mainly contributed to the closed-loop PID control system, the electronics, the
     <em>Closed-loop control diagram</em>
 </p>
 <p>
-    <img src="images/P1-schematic.png?raw=true"/>
-    <em>Electric diagram of the system</em>
-</p>
-<p>
     <img src="images/P1-venturi.gif?raw=true"/>
     <em>Flow simulation of the pump-valve system</em>
+</p>
+<p>
+    <img src="images/P1-schematic.png?raw=true"/>
+    <em>Electric diagram of the system</em>
 </p>
 <p>
     <img src="images/P1-freq.png?raw=true"/>
